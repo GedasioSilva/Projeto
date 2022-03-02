@@ -1,0 +1,44 @@
+body{ /* corpo*/
+    width: auto;
+    background-image: url(img/Pparede.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+#cab img{ /* img dentro de cabe é o logo*/
+float: left;
+
+}
+
+#social{ /* movendo o menu sempre pra esquerca em cima */
+    float:right;
+    margin-top: 40px;
+}
+
+#menu{
+    float: left;
+    margin-top: 40px;
+    width: 453px;
+}
+
+#menu ul{ /* editanto as Ul listras */
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background:linear-gradient(to bottom,rgb(247, 237, 237),rgb(145, 139, 139));
+}
+
+#menu li{ /* Editando os Li do menu*/
+    height: 30           px;
+    width: 150px;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    border-right: 1px solid rgb(244, 245, 244);
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(10, 9, 8);
+}
