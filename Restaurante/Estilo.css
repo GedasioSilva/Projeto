@@ -1,5 +1,10 @@
+.fixFloat{
+    clear: both;
+}
+
 body{ /* corpo*/
-    width: auto;
+    margin: auto;
+    width: 960px;
     background-image: url(img/Pparede.jpg);
     background-attachment: fixed;
     background-size: 100%;
@@ -13,12 +18,13 @@ float: left;
 #social{ /* movendo o menu sempre pra esquerca em cima */
     float:right;
     margin-top: 40px;
+    margin-left: 15px;
 }
 
 #menu{
     float: left;
     margin-top: 40px;
-    width: 453px;
+    width: 300px;
 }
 
 #menu ul{ /* editanto as Ul listras */
@@ -29,8 +35,8 @@ float: left;
 }
 
 #menu li{ /* Editando os Li do menu*/
-    height: 30           px;
-    width: 150px;
+    height: 30px;
+    width: 100px;
     display:table-cell;
     text-align:center;
     vertical-align:middle;
@@ -42,3 +48,106 @@ float: left;
     font-size: 20px;
     color: rgb(10, 9, 8);
 }
+#banner{
+    margin-top: 15px;
+}
+
+#banner img{ /* img pq vou formatart só a imagem */
+    width: 960px;
+}
+
+#lateral{ /* Editando a caixa lateral e não as letras */
+    margin-top: 35px;
+    float: right;
+    background-color: rgb(226, 219, 214);
+    width: 160px;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-indent: 10px;
+    padding: 5px;
+   
+}
+
+#lateral h2{
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+}
+
+#lateral p{
+    text-align: center;
+
+}
+#corpo{
+    background-color: rgb(236, 200, 142);
+    width: 770px;
+    margin-top: 35px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#corpo h1{
+    font-size: 25px;
+    box-shadow: 5px 5px 3px black;
+    width: 360px;
+    
+}
+#corpo h2{
+    font-size: 20px;
+    box-shadow: 3px 2px 6px black;
+    width: 150px;
+}
+#corpo p{
+    text-align: justify;
+}
+footer{
+    background-color: rgb(219, 216, 213);
+    color: rgb(5, 2, 2);
+    border: black solid 1px;
+    width: 380px;
+    margin: auto;
+}
+footer p {
+    font-size: 20px;
+    display: inline-block;
+    color: black;
+    text-align: center;
+}
+
+details{
+    background-color: rgb(168, 172, 172);
+    margin:20px 10px 10px 10px;
+    cursor: pointer;
+    width: 900px;
+    text-align: justify;
+    text-indent: 10px;
+    
+}
+details p{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+summary{
+    height: 26px;
+    background: linear-gradient(to bottom,rgb(150, 105, 15) , rgb(245, 245, 245));
+    font: 20px arial; 
+    font-weight: bold;
+    padding: 10px 0px 0px 10px;
+}
+h2{
+    text-align: center;
+    font: 40px;
+    height: 30px;
+    color: rgb(1, 2, 2);
+    margin: 15px;
+    box-shadow: 5px 5px 5px black;
+    width: 900px;
+    color: rgb(0, 0, 0);
+}
+details[open] summary{
+    color: rgb(194, 144, 9);
+    background: linear-gradient(to bottom , rgb(90, 55, 3),rgb(41, 27, 1));
+}
+    
