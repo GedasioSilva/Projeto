@@ -1,0 +1,68 @@
+figure.fotos{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 1px black;
+}
+figure.fotos img{
+    width: 600px;
+    height: 500px;
+}
+figure.fotos figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(253, 251, 251, 0.4);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.fotos:hover figcaption{
+    opacity: 1;
+}
+#Moqueca{
+    width:696px;
+    height:200px;
+    margin-left: 200px;
+}
+#Cuscuz{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 200px;
+}
+
+details{
+    background-color: rgb(168, 172, 172);
+    margin:20px 10px 10px 10px;
+    cursor: pointer;
+    width: 900px;
+    text-align: justify;
+    text-indent: 10px;
+    
+}
+details p{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+summary{
+    height: 26px;
+    background: linear-gradient(to bottom,rgb(150, 105, 15) , rgb(245, 245, 245));
+    font: 20px arial; 
+    font-weight: bold;
+    padding: 10px 0px 0px 10px;
+}
+h2{
+    text-align: center;
+    font: 40px;
+    height: 30px;
+    color: rgb(1, 2, 2);
+    margin: 15px;
+    box-shadow: 5px 5px 5px black;
+    width: 900px;
+    color: rgb(0, 0, 0);
+}
+details[open] summary{
+    color: rgb(194, 144, 9);
+    background: linear-gradient(to bottom , rgb(90, 55, 3),rgb(41, 27, 1));
+}

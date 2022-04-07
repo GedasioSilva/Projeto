@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Estilo.contato.css">
+    <link rel="stylesheet" href="Estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <header id="cab">
+        
+        <a href="index.html"><img id="logo" src="img/Logo.jpg.png" ></a> 
+        <div id="social">
+           <a href="https://www.facebook.com/"><img src="img/iconFacebook.png" ></a> 
+           <a href="https://www.youtube.com/results?search_query=sifrao+"><img src="img/iconTwitter.png"></a> 
+        </div>
+          <nav id="menu">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Historia.html" target="_blank">Historia</a></li>
+                  <li><a href="" target="_blank">Contato</a></li>
+              </ul>
+          </nav>
+        </header>
+        <br class="fixFloat">
+
+    <section id="contato">
+
+        <form id="formulario" action="formu.PHP" method="post">
+          
+          <input type="text" maxlength="50" size="70" name="nome" placeholder="Nome Completo" autofocus required>
+           
+          <input type="email" maxlength="50" size="40" name="email" placeholder="E-mail" required>  
+            <br>
+         <input type="tel" maxlength="11"  size="11" name="telefone" placeholder="Telefone" required>
+         
+         <input type="cpf" maxlength="11" size="11" placeholder="CPF"   required>
+            
+         <br>
+         <label>Estado:</label>
+         <select name="Estado">
+         <option value="MG">Minas Gerais </option>
+         <option value="RJ">Rio de Janeiro</option>
+         <option value="SP">São Paulo</option>
+         <option value="ES">Espírito Santo</option>
+         </select><br><br>
+
+         <input type="text" placeholder="Cidade" name="cidade"> <br>
+
+        
+
+         <label for="Comentario" >Comentario:</label><br>
+         <textarea  name="Comentario" cols="45" rows="5"  required>
+        </textarea><br>
+         
+        <div class="botoes">
+         <input id="limpar" type="submit" value="Enviar"></input>
+         <input id="limpar" type="reset" value="Limpar"></input>
+        </div>    
+        </form>
+    </section> 
+    
+</body>
+</html>

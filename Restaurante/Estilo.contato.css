@@ -1,0 +1,39 @@
+section{
+    width: 960px;
+    height: 600px;
+   
+}
+#formulario input{
+   width: 300px;
+   height: 30px;
+   size: 30px;
+   border-radius: 8px;
+}
+label{color: #000000;
+            font-weight: bold;
+            font-size: 20px;
+}
+
+#enviar{
+    background-color: rgb(80, 85, 85);
+    color: white;
+    width: 100px;
+    }
+
+#limpar{
+    font-size: 18px;
+    color: white;
+    background-color: rgb(80, 85, 85);
+    width: 100px;
+}
+#limpar{
+    font-size: 18px;
+    color: white;
+    background-color: rgb(80, 85, 85);
+    width: 100px;
+}
+textarea{
+    border-radius: 15px;
+    zoom: 130%;
+}
+

@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
      <link rel="stylesheet" href="Estilo.css">
+     <link rel="stylesheet" href="Estilo.home.css">
+     <script src="JavaScrpit.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evento Comida Nordestina </title>
 </head>
-<script src="JavaScrpit.js"></script>
-<body>
-    
+<body>    
   <header id="cab">
     <img id="logo" src="img/Logo.jpg.png" >
     <div id="social">
-        <img src="img/iconFacebook.png" >
-        <img src="img/iconTwitter.png">
+        <a href="https://www.facebook.com/" target="_blanck"><img src="img/iconFacebook.png"></a>
+        <a href="https://www.youtube.com/watch?v=Mhj15W23IjA" target="_blanck"><img src="img/iconTwitter.png"></a>
     </div>
       <nav id="menu">
           <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="Historia.html" target="_blank">Historia</a></li>
-              <li><a href="" target="_blank">Contato</a></li>
+              <li><a href="index.html" target="self">Home</a></li>
+              <li><a href="Historia.html" >Historia</a></li>
+              <li><a href="Contato.html" >Contato</a></li>
           </ul>
       </nav>
   </header>
    
  <br class="fixFloat"> <!-- Tira a propriedade float dois itens acima-->
 
-  <section id="banner"><!-- os Bannes  -->
-        <img src="img/Bane.jpg">
-  </section>
-
+        <div id="dvslider">
+            <button class="btSlider" onclick="troca(-1)"><</button>
+            <div id="dvload">
+            <div id="dvbarra"></div>
+            </div>
+            <button class="btSlider" onclick="troca(1)">></button>
+        </div>
+  
   <section id="cxLateral"> <!--Caixa lateral Ou Noticias -->
         <aside id="lateral">
             
