@@ -57,4 +57,3 @@ function anima(){
 
 window.addEventListener("load",inicia);
 
-

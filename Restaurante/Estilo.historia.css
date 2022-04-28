@@ -1,3 +1,4 @@
+/* Estilos de foto Historia*/
 figure.fotos{
     position: relative;
     border: 8px solid white;
@@ -31,6 +32,7 @@ figure.fotos:hover figcaption{
     margin-top: 350px;
     margin-left: 200px;
 }
+/* Estilos de foto Historia*/
 
 details{
     background-color: rgb(168, 172, 172);

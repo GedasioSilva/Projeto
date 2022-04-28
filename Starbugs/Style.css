@@ -1,0 +1,81 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 128 0px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+html,body{
+    height: 100%;
+    overflow: hidden; /*Pra tirar a barra de rolagem */
+    overflow-x:hidden; /*Pra corta o icone e não deixar ficar barra de rolagem na posição x */
+}
+
+header{
+    height: 100px;    
+    padding: 20px 0;
+}
+
+.logo{
+    width: 50%; /* pra faztar o menu em 50 % da tela do logo*/
+}
+.menu{
+    padding-top: 30px;
+    width: 50%; /* se não tiver espaço desse pra linha a baixo*/
+    text-align: right;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+}
+
+section.sobre{
+    height : calc(100%-(20px+160px));
+    position: relative;
+}
+.extras{
+    position:absolute;
+    bottom: -350px;
+    right: -255px;
+    width: 700px;
+    height:700px;
+    border-radius:50% ;
+    background-color: #017143;
+}
+#copo{
+    margin-top: 50px;
+    margin-left:-50px;
+}
+
+.texto-sobre{
+    margin-top: 100px;
+}
+.texto-sobre h1{
+    font-size: 50px;
+}
+.texto-sobre p{
+    text-align: justify;
+    text-indent: 10px;
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+}
+.texto-sobre button{
+    border:0;
+    background-color: #017143;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
