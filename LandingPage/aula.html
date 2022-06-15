@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Styles/Estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Mix Barra De jangada</title>
+</head>
+<body>
+    <header> <!-- é pra criar o cabecalho -->
+        <div id="title">
+        <img id="logo" src="img/Logo02.png" alt="Logo">
+        <a href="https://www.facebook.com/search/top?q=mr.%20mix%20barra%20de%20jangada"><img src="img/facebook.png"></a>
+        <a href="https://www.instagram.com/mrmixmilkshakes/"><img src="img/instragram.png"></a>      
+        </div>
+        
+        <ul class="menu"><!-- Colocando os menus -->
+            <a href="aula.html" target="_blank"><li>HOME</li></a>
+            <a href="Produto.html" target="_self">Produtos</a>
+            <a href="Sobre.html" target="_blank">sobre</a>
+            <a id="cadastra"  href="conta.php" target="_blank"><li>CADASTRO</li></a>
+        </ul>
+    </header>
+
+    <script>
+        var imgs=[];
+        var slider;
+        var imgAtual;
+        var maxImg;
+        var tmp;
+        var tempoTroca;
+        var vtempo;
+        var vbarra;
+        
+        function preCarregamento(){
+            var s=1;
+            for(var i=0;i < 3;i++){
+                imgs[i] =new Image();
+                imgs[i].src="img/Bane0"+s+".jpg";
+                s++;
+            }
+        }
+        
+        function carregarImg(img){
+            slider.style.backgroundImage="url('"+imgs[img].src+"')";
+        }
+        
+        function inicia(){
+            preCarregamento();
+            imgAtual=0;
+            maxImg=imgs.length-1;
+            slider = document.getElementById("dvslider");
+            vbarra = document.getElementById("dvbarra");
+            carregarImg(imgAtual);
+            tempoTroca = 0;
+            anima();
+            
+        }
+        
+        function troca(dir){
+            tempoTroca=0;
+            imgAtual+=dir;
+            if(imgAtual>maxImg){
+                imgAtual=0;
+            }else if(imgAtual<0){
+                imgAtual=maxImg;
+            }
+            carregarImg(imgAtual);
+        }
+        
+        function anima(){
+            tempoTroca++;
+            if(tempoTroca >= 500){
+                tempoTroca=0;
+                troca(1);
+            }
+            vtempo = tempoTroca/5;
+            vbarra.style.width=vtempo+"%";
+            window.requestAnimationFrame(anima);
+        }
+        
+        
+        window.addEventListener("load",inicia);
+            </script>
+    <main> <!-- No caso Seria o corpo do site a pagina ta dividida na metade intão tem 2 divs dentro do main-->
+         <article> <!-- é usando pra lugares onde tem imagem-->
+            <div id="dvslider">
+                <button class="btSlider" onclick="troca(-1)"><</button>
+                <div id="dvload">
+                    <div id="dvbarra"></div>
+                </div>
+                <button class="btSlider" onclick="troca(1)">></button>
+            </div>
+            <script src="Styles/estilo.js"></script>
+         </article>
+    </main>
+    
+</body>
+</html>

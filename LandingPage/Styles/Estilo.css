@@ -1,0 +1,100 @@
+body{
+    background-color:#51becd;
+    color: rgb(95, 88, 88);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    margin: 0 auto; /* se diminuir a tela ele fica no meio*/
+    padding: 0px; /* os espaçõs do lado*/
+    
+}
+html,body{
+    height: 100%;
+    overflow: hidden; /*Pra tirar a barra de rolagem */
+    overflow-x:hidden; /*Pra corta o icone e não deixar ficar barra de rolagem na posição x */
+}
+header{
+    height: 60PX;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6005b;
+}
+img #logo{
+    width: 50px;
+    height: 50px;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+}
+.menu a{
+    font-size: 13px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px red ;
+            padding: 10px;
+            background-color: antiquewhite;
+            border-radius: 13px;
+}
+a:hover{
+        zoom: 118%;
+        color: royalblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.4s all;
+}
+ 
+main{
+    flex-direction: row;
+    margin-top: px;
+    margin-left: 3%;
+    
+}
+#bane{
+   width: 1300px;
+   height:600px;
+   margin-left: 2%;
+   margin-bottom: px;
+}
+#cadastra{
+    border: 2px solid ;
+    border-radius: 10px;
+}
+
+#title a{
+    text-transform: none;
+}
+
+#dvslider{
+    width: 1300px;
+    height: 550px;
+    border: 1px solid rgb(246, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btSlider{
+    background-color: rgba(242, 191, 225, 0.4);
+    height: 5%;
+    color:rgb(15, 14, 14);
+    cursor: pointer;
+    outline: none;
+    margin: 1px;
+    border: none;
+  
+}
+#dvload{
+    
+    width: 100%;
+    height: 3px;
+    margin-top: 28%;
+    border: 1px solid rgba(157, 156, 156, 0.3);
+}
+#dvbarra{
+   
+    width: 0%;
+    height: 100%;
+    background-color: rgb(244, 235, 235);
+
+}

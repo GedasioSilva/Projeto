@@ -1,0 +1,13 @@
+img a{
+    display: flex;
+    display: table-cell;
+}
+.produto img{
+    margin: -5px;
+    padding: 20px 80px 10px 80px;
+   
+}
+
+img:hover{
+    zoom: 103%;
+}
